@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="CP">#EF286F</color>
+    <color name="CPD">@color/CP</color>
+    <color name="CA">#FFFFFF</color>
+
+    <!-- GLOBAL -->
+    <color name="TP">#00000000</color>
+    <color name="CP_ON_CA">@color/CP</color>
+    <color name="CA_ON_CP">@color/CA</color>
+    <color name="shadow_1">#55000000</color>
+    <color name="errorBorder">#999</color>
+    <color name="errorIcon">@color/errorBorder</color>
+    <color name="errorText">@color/errorBorder</color>
+    <color name="notifBG">@color/CP</color>
+    <color name="notifTXT">@color/CA</color>
+
+    <!-- Main -->
+    <color name="pairedBGHover">#11000000</color>
+    <color name="pairedBorderBottom">#EEE</color>
+    <color name="mainListTitle">#99EF286F</color>
+</resources>

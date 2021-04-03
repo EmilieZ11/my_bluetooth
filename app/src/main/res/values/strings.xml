@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">My Bluetooth</string>
+
+    <!-- Main -->
+    <string name="tapToExit">Tap again to exit&#8230;</string>
+    <string name="notSupported">Bluetooth is not supported by your device!</string>
+    <string name="youNeedIt">Sorry, in order to continue, you have to turn on your Bluetooth!</string>
+    <string name="mMenuSearch">Search</string>
+    <string name="mTurnBluetoothOff">Turn Off Bluetooth</string>
+    <string name="mTurnBluetoothOn">Turn On Bluetooth</string>
+    <string name="mSectPaired">Paired devices</string>
+    <string name="mSectAvail">Available devices</string>
+
+    <!-- NOTIFICATION -->
+    <string name="channel_description">My Bluetooth App</string>
+    <string name="notifOn">Bluetooth is On!</string>
+</resources>

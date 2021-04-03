@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="CP">#444</color>
+    <color name="CPD">@color/CP</color>
+    <color name="CA">#000</color>
+
+    <!-- GLOBAL -->
+    <color name="CP_ON_CA">#FFF</color>
+    <color name="CA_ON_CP">#FFF</color>
+
+    <!-- Main -->
+    <color name="pairedBGHover">#22FFFFFF</color>
+    <color name="pairedBorderBottom">#555</color>
+</resources>

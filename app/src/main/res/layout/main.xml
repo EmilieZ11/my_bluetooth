@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/body"
+    tools:context=".Main">
+
+    <androidx.appcompat.widget.Toolbar
+        style="@style/toolbar"
+        app:menu="@menu/main" />
+
+    <View style="@style/tbShadow" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout style="@style/inner">
+
+        <ScrollView
+            android:id="@+id/mainSV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/mainLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/mainListTitle"
+                    android:text="@string/mSectPaired" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/paired"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                <TextView
+                    style="@style/mainListTitle"
+                    android:text="@string/mSectAvail" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/avail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            </LinearLayout>
+        </ScrollView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout style="@style/error">
+
+            <ImageView style="@style/errorIcon" />
+
+            <TextView
+                android:id="@+id/notSupported"
+                style="@style/errorText"
+                android:text="@string/notSupported" />
+
+            <TextView
+                android:id="@+id/youNeedIt"
+                style="@style/errorText"
+                android:text="@string/youNeedIt" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

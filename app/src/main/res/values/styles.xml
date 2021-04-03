@@ -1,0 +1,111 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/CP</item>
+        <item name="colorPrimaryDark">@color/CPD</item>
+        <item name="colorAccent">@color/CA</item>
+        <item name="android:windowBackground">@color/CA</item>
+        <item name="android:navigationBarColor" tools:ignore="NewApi">@color/CPD</item>
+    </style>
+
+    <!-- GLOBAL -->
+    <style name="body">
+        <item name="android:id">@id/body</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="toolbar">
+        <item name="android:id">@id/toolbar</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item><!--?attr/actionBarSize-->
+        <item name="android:background">@color/CP</item><!--wrap_content-->
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:theme">@style/toolbarTheme</item>
+        <item name="title">@string/app_name</item>
+        <item name="titleTextColor">@color/CA_ON_CP</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+    </style>
+
+    <style name="toolbarTheme" parent="Theme.AppCompat.DayNight">
+        <item name="colorControlNormal">@color/CA_ON_CP</item>
+        <item name="android:textColorPrimary">@color/CP_ON_CA</item>
+        <item name="android:textColorSecondary">@color/CP_ON_CA</item>
+    </style>
+
+    <style name="parentConstraint">
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+    </style>
+
+    <style name="matchParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="shadow_1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">5dp</item>
+        <item name="android:background">@drawable/shadow_1</item>
+    </style>
+
+    <style name="tbShadow" parent="shadow_1">
+        <item name="android:id">@id/tbShadow</item>
+        <item name="android:layout_height">6dp</item>
+        <item name="android:alpha">0.7</item>
+        <item name="layout_constraintTop_toBottomOf">@id/toolbar</item>
+    </style>
+
+    <style name="inner">
+        <item name="android:id">@id/inner</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintTop_toBottomOf">@id/toolbar</item>
+    </style>
+
+    <style name="error" parent="parentConstraint">
+        <item name="android:id">@id/error</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:background">@drawable/error_1</item>
+        <item name="android:paddingTop">25sp</item>
+        <item name="android:paddingBottom">25sp</item>
+        <item name="android:paddingLeft">30sp</item>
+        <item name="android:paddingRight">30sp</item>
+        <item name="layout_constraintWidth_percent">0.75</item>
+    </style>
+
+    <style name="errorIcon">
+        <item name="android:id">@id/errorIcon</item>
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:src">@drawable/error_icon_1</item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+        <item name="layout_constraintRight_toRightOf">parent</item>
+    </style>
+
+    <style name="errorText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/errorText</item>
+        <item name="android:lineSpacingExtra">12sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginTop">17sp</item>
+        <item name="layout_constraintTop_toBottomOf">@id/errorIcon</item>
+    </style>
+
+
+    <!-- Main -->
+    <style name="mainListTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/mainListTitle</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingStart">20dp</item>
+    </style>
+</resources>
